@@ -19,9 +19,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private String[] mountainNames = {"Matterhorn","Mont Blanc","Denali"};
-    private String[] mountainLocations = {"Alps","Alps","Alaska"};
-    private int[] mountainHeights ={4478,4808,6190};
+    private String[] mountainNames = {"Matterhorn","Mont Blanc","Denali","Dikanäs"};
+    private String[] mountainLocations = {"Alps","Alps","Alaska","Vilhelmina Kommun"};
+    private int[] mountainHeights ={4478,4808,6190,375};
     // Create ArrayLists from the raw data above and use these lists when populating your ListView.
     private ArrayList<String> listData=new ArrayList<>(Arrays.asList(mountainNames));
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         my_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(),"Enter text here", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Location: " + mountainLocations[i] +"\n"+ "Height: " + mountainHeights[i], Toast.LENGTH_SHORT).show();
             }
         });
         // The onCreate method is run when the app is created.
