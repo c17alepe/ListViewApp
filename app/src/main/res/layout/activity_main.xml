@@ -10,8 +10,8 @@
     <!-- You need to enter your components here -->
     <ListView
         android:id="@+id/my_listview"
-        android:layout_width="379dp"
-        android:layout_height="486dp"
+        android:layout_width="384dp"
+        android:layout_height="508dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
