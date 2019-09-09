@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         my_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(),"Location: " + mountainLocations[i] +"\n"+ "Height: " + mountainHeights[i], Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),
+                        "Location: " + mountainLocations[i] +"\n"+ "Height: " + mountainHeights[i], Toast.LENGTH_SHORT).show();
             }
         });
         // The onCreate method is run when the app is created.
